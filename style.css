@@ -59,3 +59,8 @@ button {
   background: #055a6d;
 }
 
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
