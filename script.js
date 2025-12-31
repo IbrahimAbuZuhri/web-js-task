@@ -43,3 +43,7 @@ deleteDoneBtn.onclick = function () {
   todos = newTodos;
   drawTasks();
 };
+deleteAllBtn.onclick = function () {
+  todos = [];
+  drawTasks();
+};
