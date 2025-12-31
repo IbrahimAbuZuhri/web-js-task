@@ -73,3 +73,18 @@ button {
   margin-bottom: 8px;
 }
 
+.todo-item.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item.deleting {
+  background: #ffd6d6;
+}
+
+.todo-actions button {
+  background: none;
+  font-size: 18px;
+}
+
+
