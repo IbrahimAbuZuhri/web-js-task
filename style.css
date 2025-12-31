@@ -25,3 +25,8 @@ h2 {
   padding: 15px 35px;
   border-width: 0.1px;
 }
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
