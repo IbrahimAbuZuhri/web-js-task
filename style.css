@@ -32,5 +32,9 @@
 }
 /* Scrollbar - Chrome / Edge */
 #todoList::-webkit-scrollbar {
-  width: 3px; /* رفيع */
+  width: 2px; /* رفيع */
+}
+#todoList::-webkit-scrollbar-thumb {
+  background-color: #0d8fa8; 
+  border-radius: 10px;
 }
