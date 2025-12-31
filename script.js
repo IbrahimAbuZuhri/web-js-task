@@ -14,3 +14,8 @@ var confirmDeleteBtn = document.getElementById("confirmDelete");
 var editModal = document.getElementById("editModal");
 var editInput = document.getElementById("editInput");
 var saveEditBtn = document.getElementById("saveEdit");
+
+var todos = [];
+var currentFilter = "all";
+var deleteIndex = -1;
+var editIndex = -1;
