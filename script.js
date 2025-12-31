@@ -21,3 +21,11 @@ confirmDeleteBtn.onclick = function () {
 function closeDeleteModal() {
   deleteModal.style.display = "none";
 }
+saveEditBtn.onclick = function () {
+  var newText = editInput.value.trim();
+  if (editIndex > -1 && newText !== "") {
+    todos[editIndex].text = newText;
+  }
+  closeEditModal();
+  drawTasks();
+}
