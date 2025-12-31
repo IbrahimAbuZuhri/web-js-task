@@ -64,3 +64,12 @@ button {
   padding: 0;
 }
 
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
