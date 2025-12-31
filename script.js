@@ -29,3 +29,6 @@ saveEditBtn.onclick = function () {
   closeEditModal();
   drawTasks();
 }
+function closeEditModal() {
+  editModal.style.display = "none";
+}
