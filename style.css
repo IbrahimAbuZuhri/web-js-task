@@ -42,3 +42,9 @@ button {
   background: #0d8fa8;
   color: white;
 }
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
