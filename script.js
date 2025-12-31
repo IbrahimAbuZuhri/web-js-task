@@ -19,3 +19,13 @@ var todos = [];
 var currentFilter = "all";
 var deleteIndex = -1;
 var editIndex = -1;
+
+addBtn.onclick = function () {
+    var text = input.value.trim();
+    if (text === "") return;
+  
+    todos.push({ text: text, done: false });
+    input.value = "";
+    drawTasks();
+  };
+  
