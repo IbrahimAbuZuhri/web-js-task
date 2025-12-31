@@ -28,4 +28,53 @@ addBtn.onclick = function () {
     input.value = "";
     drawTasks();
   };
+
+  function drawTasks() {
+    todoList.innerHTML = "";
+  
+    for (var i = 0; i < todos.length; i++) {
+      
+      if (currentFilter === "done" && !todos[i].done) continue;
+      if (currentFilter === "todo" && todos[i].done) continue;
+  
+      var li = document.createElement("li");
+      li.className = "todo-item";
+      if (todos[i].done) li.className += " done";
+  
+  
+      var textSpan = document.createElement("span");
+      textSpan.innerText = todos[i].text;
+  
+      
+      var actions = document.createElement("div");
+  
+      
+      var check = document.createElement("input");
+      check.type = "checkbox";
+      check.checked = todos[i].done;
+      check.className = "check";
+      check.setAttribute("data-index", i);
+  
+      
+      var editBtn = document.createElement("button");
+      editBtn.innerText = "✏";
+      editBtn.className = "edit-btn";
+      editBtn.setAttribute("data-index", i);
+  
+    
+      var deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "🗑";
+      deleteBtn.className = "delete-btn";
+      deleteBtn.setAttribute("data-index", i);
+  
+      actions.appendChild(check);
+      actions.appendChild(editBtn);
+      actions.appendChild(deleteBtn);
+  
+      li.appendChild(textSpan);
+      li.appendChild(actions);
+  
+      todoList.appendChild(li);
+    }
+  }
   
