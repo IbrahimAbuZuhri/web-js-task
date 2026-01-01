@@ -1,3 +1,45 @@
+.modal-content {
+  background: white;
+  width: 300px;
+  margin: 15% auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.gray {
+  background: #ccc;
+}
+.red {
+  background: #e53935;
+  color: white;
+}
+.blue {
+  background: #0d8fa8;
+  color: white;
+}
+#todoList {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+/* Scrollbar - Chrome / Edge */
+#todoList::-webkit-scrollbar {
+  width: 3px;
+}
+#todoList::-webkit-scrollbar-thumb {
+  background-color: #0d8fa8; 
+  border-radius: 10px;
+}
+#todoList::-webkit-scrollbar-track {
+  background: #f1f1f1;
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f8;
