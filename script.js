@@ -77,4 +77,23 @@ addBtn.onclick = function () {
       todoList.appendChild(li);
     }
   }
+
+  todoList.onclick = function (e) {
+    var t = e.target;
+  
+    
+    if (t.classList.contains("edit-btn")) {
+      editIndex = Number(t.getAttribute("data-index"));
+      editInput.value = todos[editIndex].text;
+      editModal.style.display = "block";
+      return;
+    }
+  
+    
+    if (t.classList.contains("delete-btn")) {
+      deleteIndex = Number(t.getAttribute("data-index"));
+      deleteModal.style.display = "block";
+      return;
+    }
+  };
   
