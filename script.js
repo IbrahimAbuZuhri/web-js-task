@@ -1,5 +1,4 @@
-/* =========================
-   FILTER BUTTONS
+
 console.log ("JS loaded successfully!");
 for (var i = 0; i < filters.length; i++) {
   filters[i].onclick = function () {
@@ -13,8 +12,7 @@ for (var i = 0; i < filters.length; i++) {
   };
 }
 
-/* =========================
-   DELETE MODAL
+
 confirmDeleteBtn.onclick = function () {
   if (deleteIndex > -1) {
     todos.splice(deleteIndex, 1);
@@ -27,8 +25,6 @@ function closeDeleteModal() {
   deleteModal.style.display = "none";
 }
 
-/* =========================
-   EDIT MODAL
 saveEditBtn.onclick = function () {
   var newText = editInput.value.trim();
   if (editIndex > -1 && newText !== "") {
@@ -40,8 +36,7 @@ saveEditBtn.onclick = function () {
 function closeEditModal() {
   editModal.style.display = "none";
 };
-/* =========================
-   BOTTOM BUTTONS
+
 deleteDoneBtn.onclick = function () {
   var newTodos = [];
   for (var i = 0; i < todos.length; i++) {
